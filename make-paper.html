@@ -1,0 +1,239 @@
+<!Doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>56동원 경작서 생성기</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-wrapper">
+            <h1>경작서 만들기</h1>
+            <select id="optionSelect">
+                <option value="paper-weekend">휴일</option>
+                <option value="paper-week">평일</option>
+            </select>
+            <div class="paper-container">
+                <div id="paper-weekend" class="content">
+                    <div class="paper-column1">
+                        <h3>불침번</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>순번</th>
+                                    <th>시간</th>
+                                    <th>근무자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>22:00 ~ 24:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>04:30 ~ 06:30</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div clsass="paper-column2">
+                        <h3>CCTV</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>순번</th>
+                                    <th>시간</th>
+                                    <th>근무자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>08:00 ~ 10:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>10:00 ~ 12:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>12:00 ~ 14:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>14:00 ~ 16:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>16:00 ~ 18:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>18:00 ~ 20:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>20:00 ~ 22:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>22:00 ~ 00:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>00:00 ~ 02:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>02:00 ~ 04:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>04:00 ~ 06:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>06:00 ~ 08:00</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="paper-week" class="content">
+                    <div class="paper-column1">
+                        <h3>불침번</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>순번</th>
+                                    <th>시간</th>
+                                    <th>근무자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>22:00 ~ 24:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>04:30 ~ 06:30</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div clsass="paper-column2">
+                        <h3>CCTV</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>순번</th>
+                                    <th>시간</th>
+                                    <th>근무자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="lunch">
+                                    <td>중식시간</td>
+                                    <td>11:30 ~ 12:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="lunch">
+                                    <td>중식시간</td>
+                                    <td>12:00 ~ 12:30</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="patient">
+                                    <td>환자cctv</td>
+                                    <td>15:30 ~ 17:30</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="dinner">
+                                    <td>석식시간</td>
+                                    <td>17:30 ~ 18:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="dinner">
+                                    <td>석식시간</td>
+                                    <td>18:00 ~ 18:30</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>18:30 ~ 20:30</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>20:30 ~ 22:30</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>22:30 ~ 00:30</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>00:30 ~ 02:30</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>02:30 ~ 04:30</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>04:30 ~ 06:30</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>06:30 ~ 08:30</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('optionSelect').addEventListener('change', function() {
+            var selectedValue = this.value;
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.style.display = 'none';
+            });
+            document.getElementById(selectedValue).style.display = 'block';
+        });
+        // 초기상태 설정
+        document.getElementById('optionSelect').dispatchEvent(new Event('change'));
+    </script>
+    
+</body>
+</html>
